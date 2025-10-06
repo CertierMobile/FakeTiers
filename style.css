@@ -1,0 +1,21 @@
+/* Smooth background animation */
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+svg.pattern-grid {
+  animation: gridMove 10s linear infinite;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0e27, #1a1f3a, #0f1419);
+}
+
+img {
+  image-rendering: crisp-edges;
+}
